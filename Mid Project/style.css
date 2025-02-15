@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2575fc;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#welcome {
+  animation: slideIn 2s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#about {
+  padding: 20px;
+}
+#about img {
+  width: 150px;
+  border-radius: 50%;
+  animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#portfolio {
+  padding: 20px;
+}
+.project {
+  margin-bottom: 20px;
+}
+.project img {
+  width: 100%;
+  max-width: 300px;
+}
+
+#contact {
+  padding: 20px;
+}
+#contact form input,
+#contact form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  #about,
+  #portfolio,
+  #contact {
+    padding: 10px;
+  }
+}
